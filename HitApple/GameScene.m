@@ -41,6 +41,7 @@ static const u_int32_t kWallCategory = 0x1<<2;
 @property (nonatomic) SKShapeNode *ball;
 @property (nonatomic) SKShapeNode *apple;
 @property (nonatomic) UIButton *resetButton;
+@property (nonatomic) NSMutableArray *toolNodeArray;
 @end
 
 @implementation GameScene
@@ -87,15 +88,15 @@ static const u_int32_t kWallCategory = 0x1<<2;
     self.physicsBody = ground;
     self.physicsBody.categoryBitMask = kWallCategory;
     self.physicsWorld.contactDelegate = self;
+    
+    _toolNodeArray = [[NSMutableArray alloc]init];
 
 }
 
 - (void) didTapResetButton : (id)sender
 {
-    _ball.physicsBody.dynamic = NO;
-    _ball.position = CGPointMake(self.size.width/2, 20);
-    _apple.physicsBody.dynamic = NO;
-    _apple.position = CGPointMake(self.size.width/2, self.size.height-20);
+    self.rank = 0;
+    [self resetScene];
 }
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -124,9 +125,103 @@ static const u_int32_t kWallCategory = 0x1<<2;
     
     _apple.physicsBody.dynamic = YES;
     
-    //过关
-
+    self.physicsWorld.contactDelegate = nil;
+    __weak typeof(self) weakSelf = self;
+    SKAction *wait = [SKAction waitForDuration:5.0];
+    [self runAction:wait completion:^{
+        weakSelf.rank++;
+        [weakSelf resetScene];
+    }];
     
+    //过关
+//    self.rank++;
+//    [self resetScene];
+    
+}
+
+
+- (void) resetScene
+{
+    if(_toolNodeArray.count>0){
+        for(SKNode *node in _toolNodeArray){
+            [node removeFromParent];
+        }
+        [_toolNodeArray removeAllObjects];
+    }
+    
+    switch (_rank) {
+        case 0:{
+            
+            NSLog(@"\n\nrank 0\n\n");
+            _ball.physicsBody.dynamic = NO;
+            _ball.position = CGPointMake(self.size.width/2, 20);
+            _apple.physicsBody.dynamic = NO;
+            _apple.position = CGPointMake(self.size.width/2, self.size.height-20);
+            break;
+        }
+        case 1:{
+            NSLog(@"\n\nrank 1\n\n");
+            _ball.physicsBody.dynamic = NO;
+            _ball.position = CGPointMake(self.size.width/2, 20);
+            _apple.physicsBody.dynamic = NO;
+            _apple.position = CGPointMake(self.size.width/2, self.size.height-20);
+            
+            SKSpriteNode *board = [[SKSpriteNode alloc]initWithColor:[SKColor yellowColor] size:CGSizeMake(100, 20)];
+            board.position = CGPointMake(self.size.width/2, self.size.height-40-100);
+            board.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:board.size];
+            board.physicsBody.dynamic = NO;
+            board.physicsBody.categoryBitMask = kWallCategory;
+            board.physicsBody.contactTestBitMask = 0x0;
+            [self addChild:board];
+            [_toolNodeArray addObject:board];
+            break;
+        }
+        case 2:{
+            NSLog(@"\n\nrank 2\n\n");
+            _ball.physicsBody.dynamic = NO;
+            _ball.position = CGPointMake(self.size.width/2, 20);
+            _apple.physicsBody.dynamic = NO;
+            _apple.position = CGPointMake(self.size.width/2, self.size.height-20);
+            SKSpriteNode *board = [[SKSpriteNode alloc]initWithColor:[SKColor yellowColor] size:CGSizeMake(100, 20)];
+            board.position = CGPointMake(self.size.width/2, self.size.height-140);
+            board.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:board.size];
+            board.physicsBody.dynamic = NO;
+            board.physicsBody.categoryBitMask = kWallCategory;
+            board.physicsBody.contactTestBitMask = 0x0;
+            [self addChild:board];
+            
+             _apple.physicsBody.dynamic = YES;
+            [_toolNodeArray addObject:board];
+            
+//            _apple.position = CGPointMake(self.size.width/2, board.position.y+10);
+            break;
+        }
+        case 3:{
+            NSLog(@"\n\nrank 2\n\n");
+            _ball.physicsBody.dynamic = NO;
+            _ball.position = CGPointMake(self.size.width/2, 20);
+            _apple.physicsBody.dynamic = NO;
+            _apple.position = CGPointMake(self.size.width/2, self.size.height-20);
+            
+            SKSpriteNode *board = [[SKSpriteNode alloc]initWithColor:[SKColor yellowColor] size:CGSizeMake(160, 20)];
+            board.position = CGPointMake(self.size.width/2, self.size.height-140);
+            board.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:board.size];
+            board.physicsBody.dynamic = NO;
+            board.physicsBody.categoryBitMask = kWallCategory;
+            board.physicsBody.contactTestBitMask = 0x0;
+            [self addChild:board];
+            
+            _apple.physicsBody.dynamic = YES;
+            [_toolNodeArray addObject:board];
+            
+            //            _apple.position = CGPointMake(self.size.width/2, board.position.y+10);
+            break;
+        }
+        default:
+            break;
+    }
+    
+    self.physicsWorld.contactDelegate = self;
 }
 
 -(void)update:(CFTimeInterval)currentTime {
