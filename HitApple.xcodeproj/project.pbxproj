@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC76DB8E1CD2024100540A41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC76DB8D1CD2024100540A41 /* main.m */; };
+		CC76DB911CD2024100540A41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC76DB901CD2024100540A41 /* AppDelegate.m */; };
+		CC76DB941CD2024100540A41 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CC76DB931CD2024100540A41 /* GameScene.m */; };
+		CC76DB961CD2024100540A41 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CC76DB951CD2024100540A41 /* GameScene.sks */; };
+		CC76DB991CD2024100540A41 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC76DB981CD2024100540A41 /* GameViewController.m */; };
+		CC76DB9C1CD2024100540A41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC76DB9A1CD2024100540A41 /* Main.storyboard */; };
+		CC76DB9E1CD2024100540A41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC76DB9D1CD2024100540A41 /* Assets.xcassets */; };
+		CC76DBA11CD2024100540A41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC76DB9F1CD2024100540A41 /* LaunchScreen.storyboard */; };
+		CC76DBAC1CD2024100540A41 /* HitAppleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC76DBAB1CD2024100540A41 /* HitAppleTests.m */; };
+		CC76DBB71CD2024200540A41 /* HitAppleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC76DBB61CD2024200540A41 /* HitAppleUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC76DBA81CD2024100540A41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC76DB811CD2024100540A41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC76DB881CD2024100540A41;
+			remoteInfo = HitApple;
+		};
+		CC76DBB31CD2024200540A41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC76DB811CD2024100540A41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC76DB881CD2024100540A41;
+			remoteInfo = HitApple;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC76DB891CD2024100540A41 /* HitApple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HitApple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC76DB8D1CD2024100540A41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC76DB8F1CD2024100540A41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CC76DB901CD2024100540A41 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CC76DB921CD2024100540A41 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		CC76DB931CD2024100540A41 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		CC76DB951CD2024100540A41 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		CC76DB971CD2024100540A41 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		CC76DB981CD2024100540A41 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		CC76DB9B1CD2024100540A41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC76DB9D1CD2024100540A41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC76DBA01CD2024100540A41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC76DBA21CD2024100540A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC76DBA71CD2024100540A41 /* HitAppleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HitAppleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC76DBAB1CD2024100540A41 /* HitAppleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitAppleTests.m; sourceTree = "<group>"; };
+		CC76DBAD1CD2024200540A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC76DBB21CD2024200540A41 /* HitAppleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HitAppleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC76DBB61CD2024200540A41 /* HitAppleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitAppleUITests.m; sourceTree = "<group>"; };
+		CC76DBB81CD2024200540A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC76DB861CD2024100540A41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC76DBA41CD2024100540A41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC76DBAF1CD2024200540A41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC76DB801CD2024100540A41 = {
+			isa = PBXGroup;
+			children = (
+				CC76DB8B1CD2024100540A41 /* HitApple */,
+				CC76DBAA1CD2024100540A41 /* HitAppleTests */,
+				CC76DBB51CD2024200540A41 /* HitAppleUITests */,
+				CC76DB8A1CD2024100540A41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC76DB8A1CD2024100540A41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC76DB891CD2024100540A41 /* HitApple.app */,
+				CC76DBA71CD2024100540A41 /* HitAppleTests.xctest */,
+				CC76DBB21CD2024200540A41 /* HitAppleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC76DB8B1CD2024100540A41 /* HitApple */ = {
+			isa = PBXGroup;
+			children = (
+				CC76DBC51CD2026400540A41 /* ViewController */,
+				CC76DBC41CD2024C00540A41 /* Scene */,
+				CC76DB9A1CD2024100540A41 /* Main.storyboard */,
+				CC76DB8C1CD2024100540A41 /* Supporting Files */,
+			);
+			path = HitApple;
+			sourceTree = "<group>";
+		};
+		CC76DB8C1CD2024100540A41 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC76DB8F1CD2024100540A41 /* AppDelegate.h */,
+				CC76DB901CD2024100540A41 /* AppDelegate.m */,
+				CC76DB8D1CD2024100540A41 /* main.m */,
+				CC76DB9D1CD2024100540A41 /* Assets.xcassets */,
+				CC76DB9F1CD2024100540A41 /* LaunchScreen.storyboard */,
+				CC76DBA21CD2024100540A41 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC76DBAA1CD2024100540A41 /* HitAppleTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC76DBAB1CD2024100540A41 /* HitAppleTests.m */,
+				CC76DBAD1CD2024200540A41 /* Info.plist */,
+			);
+			path = HitAppleTests;
+			sourceTree = "<group>";
+		};
+		CC76DBB51CD2024200540A41 /* HitAppleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC76DBB61CD2024200540A41 /* HitAppleUITests.m */,
+				CC76DBB81CD2024200540A41 /* Info.plist */,
+			);
+			path = HitAppleUITests;
+			sourceTree = "<group>";
+		};
+		CC76DBC41CD2024C00540A41 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				CC76DB921CD2024100540A41 /* GameScene.h */,
+				CC76DB931CD2024100540A41 /* GameScene.m */,
+				CC76DB951CD2024100540A41 /* GameScene.sks */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		CC76DBC51CD2026400540A41 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CC76DB971CD2024100540A41 /* GameViewController.h */,
+				CC76DB981CD2024100540A41 /* GameViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC76DB881CD2024100540A41 /* HitApple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC76DBBB1CD2024200540A41 /* Build configuration list for PBXNativeTarget "HitApple" */;
+			buildPhases = (
+				CC76DB851CD2024100540A41 /* Sources */,
+				CC76DB861CD2024100540A41 /* Frameworks */,
+				CC76DB871CD2024100540A41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HitApple;
+			productName = HitApple;
+			productReference = CC76DB891CD2024100540A41 /* HitApple.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC76DBA61CD2024100540A41 /* HitAppleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC76DBBE1CD2024200540A41 /* Build configuration list for PBXNativeTarget "HitAppleTests" */;
+			buildPhases = (
+				CC76DBA31CD2024100540A41 /* Sources */,
+				CC76DBA41CD2024100540A41 /* Frameworks */,
+				CC76DBA51CD2024100540A41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC76DBA91CD2024100540A41 /* PBXTargetDependency */,
+			);
+			name = HitAppleTests;
+			productName = HitAppleTests;
+			productReference = CC76DBA71CD2024100540A41 /* HitAppleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC76DBB11CD2024200540A41 /* HitAppleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC76DBC11CD2024200540A41 /* Build configuration list for PBXNativeTarget "HitAppleUITests" */;
+			buildPhases = (
+				CC76DBAE1CD2024200540A41 /* Sources */,
+				CC76DBAF1CD2024200540A41 /* Frameworks */,
+				CC76DBB01CD2024200540A41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC76DBB41CD2024200540A41 /* PBXTargetDependency */,
+			);
+			name = HitAppleUITests;
+			productName = HitAppleUITests;
+			productReference = CC76DBB21CD2024200540A41 /* HitAppleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC76DB811CD2024100540A41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "武淅 段";
+				TargetAttributes = {
+					CC76DB881CD2024100540A41 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 59U9PKJ5KW;
+					};
+					CC76DBA61CD2024100540A41 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CC76DB881CD2024100540A41;
+					};
+					CC76DBB11CD2024200540A41 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CC76DB881CD2024100540A41;
+					};
+				};
+			};
+			buildConfigurationList = CC76DB841CD2024100540A41 /* Build configuration list for PBXProject "HitApple" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC76DB801CD2024100540A41;
+			productRefGroup = CC76DB8A1CD2024100540A41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC76DB881CD2024100540A41 /* HitApple */,
+				CC76DBA61CD2024100540A41 /* HitAppleTests */,
+				CC76DBB11CD2024200540A41 /* HitAppleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC76DB871CD2024100540A41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC76DB961CD2024100540A41 /* GameScene.sks in Resources */,
+				CC76DBA11CD2024100540A41 /* LaunchScreen.storyboard in Resources */,
+				CC76DB9E1CD2024100540A41 /* Assets.xcassets in Resources */,
+				CC76DB9C1CD2024100540A41 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC76DBA51CD2024100540A41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC76DBB01CD2024200540A41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC76DB851CD2024100540A41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC76DB991CD2024100540A41 /* GameViewController.m in Sources */,
+				CC76DB911CD2024100540A41 /* AppDelegate.m in Sources */,
+				CC76DB941CD2024100540A41 /* GameScene.m in Sources */,
+				CC76DB8E1CD2024100540A41 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC76DBA31CD2024100540A41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC76DBAC1CD2024100540A41 /* HitAppleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC76DBAE1CD2024200540A41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC76DBB71CD2024200540A41 /* HitAppleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC76DBA91CD2024100540A41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC76DB881CD2024100540A41 /* HitApple */;
+			targetProxy = CC76DBA81CD2024100540A41 /* PBXContainerItemProxy */;
+		};
+		CC76DBB41CD2024200540A41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC76DB881CD2024100540A41 /* HitApple */;
+			targetProxy = CC76DBB31CD2024200540A41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC76DB9A1CD2024100540A41 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC76DB9B1CD2024100540A41 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC76DB9F1CD2024100540A41 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC76DBA01CD2024100540A41 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC76DBB91CD2024200540A41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CC76DBBA1CD2024200540A41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC76DBBC1CD2024200540A41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = HitApple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.duan.HitApple;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		CC76DBBD1CD2024200540A41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = HitApple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.duan.HitApple;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		CC76DBBF1CD2024200540A41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = HitAppleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.duan.HitAppleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HitApple.app/HitApple";
+			};
+			name = Debug;
+		};
+		CC76DBC01CD2024200540A41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HitAppleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.duan.HitAppleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HitApple.app/HitApple";
+			};
+			name = Release;
+		};
+		CC76DBC21CD2024200540A41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = HitAppleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.duan.HitAppleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HitApple;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CC76DBC31CD2024200540A41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HitAppleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.duan.HitAppleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HitApple;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC76DB841CD2024100540A41 /* Build configuration list for PBXProject "HitApple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC76DBB91CD2024200540A41 /* Debug */,
+				CC76DBBA1CD2024200540A41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC76DBBB1CD2024200540A41 /* Build configuration list for PBXNativeTarget "HitApple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC76DBBC1CD2024200540A41 /* Debug */,
+				CC76DBBD1CD2024200540A41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CC76DBBE1CD2024200540A41 /* Build configuration list for PBXNativeTarget "HitAppleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC76DBBF1CD2024200540A41 /* Debug */,
+				CC76DBC01CD2024200540A41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CC76DBC11CD2024200540A41 /* Build configuration list for PBXNativeTarget "HitAppleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC76DBC21CD2024200540A41 /* Debug */,
+				CC76DBC31CD2024200540A41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC76DB811CD2024100540A41 /* Project object */;
+}
