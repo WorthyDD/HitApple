@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC366DD61D3DCF14009F0AEC /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CC366DD51D3DCF14009F0AEC /* GameOverScene.m */; };
 		CC76DB8E1CD2024100540A41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC76DB8D1CD2024100540A41 /* main.m */; };
 		CC76DB911CD2024100540A41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC76DB901CD2024100540A41 /* AppDelegate.m */; };
 		CC76DB941CD2024100540A41 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CC76DB931CD2024100540A41 /* GameScene.m */; };
@@ -17,6 +18,8 @@
 		CC76DBA11CD2024100540A41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC76DB9F1CD2024100540A41 /* LaunchScreen.storyboard */; };
 		CC76DBAC1CD2024100540A41 /* HitAppleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC76DBAB1CD2024100540A41 /* HitAppleTests.m */; };
 		CC76DBB71CD2024200540A41 /* HitAppleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC76DBB61CD2024200540A41 /* HitAppleUITests.m */; };
+		CCEEB2751CD8550C00303167 /* collision.wav in Resources */ = {isa = PBXBuildFile; fileRef = CCEEB2741CD8550C00303167 /* collision.wav */; };
+		CCEEB2771CD8557500303167 /* glass_broken.wav in Resources */ = {isa = PBXBuildFile; fileRef = CCEEB2761CD8557500303167 /* glass_broken.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC366DD41D3DCF14009F0AEC /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
+		CC366DD51D3DCF14009F0AEC /* GameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverScene.m; sourceTree = "<group>"; };
 		CC76DB891CD2024100540A41 /* HitApple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HitApple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC76DB8D1CD2024100540A41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC76DB8F1CD2024100540A41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +61,8 @@
 		CC76DBB21CD2024200540A41 /* HitAppleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HitAppleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC76DBB61CD2024200540A41 /* HitAppleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitAppleUITests.m; sourceTree = "<group>"; };
 		CC76DBB81CD2024200540A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCEEB2741CD8550C00303167 /* collision.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = collision.wav; sourceTree = "<group>"; };
+		CCEEB2761CD8557500303167 /* glass_broken.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = glass_broken.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +113,7 @@
 		CC76DB8B1CD2024100540A41 /* HitApple */ = {
 			isa = PBXGroup;
 			children = (
+				CCEEB26F1CD843E500303167 /* resoource */,
 				CC76DBC51CD2026400540A41 /* ViewController */,
 				CC76DBC41CD2024C00540A41 /* Scene */,
 				CC76DB9A1CD2024100540A41 /* Main.storyboard */,
@@ -151,6 +159,8 @@
 				CC76DB921CD2024100540A41 /* GameScene.h */,
 				CC76DB931CD2024100540A41 /* GameScene.m */,
 				CC76DB951CD2024100540A41 /* GameScene.sks */,
+				CC366DD41D3DCF14009F0AEC /* GameOverScene.h */,
+				CC366DD51D3DCF14009F0AEC /* GameOverScene.m */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
@@ -162,6 +172,15 @@
 				CC76DB981CD2024100540A41 /* GameViewController.m */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		CCEEB26F1CD843E500303167 /* resoource */ = {
+			isa = PBXGroup;
+			children = (
+				CCEEB2741CD8550C00303167 /* collision.wav */,
+				CCEEB2761CD8557500303167 /* glass_broken.wav */,
+			);
+			name = resoource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +287,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCEEB2771CD8557500303167 /* glass_broken.wav in Resources */,
+				CCEEB2751CD8550C00303167 /* collision.wav in Resources */,
 				CC76DB961CD2024100540A41 /* GameScene.sks in Resources */,
 				CC76DBA11CD2024100540A41 /* LaunchScreen.storyboard in Resources */,
 				CC76DB9E1CD2024100540A41 /* Assets.xcassets in Resources */,
@@ -296,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC366DD61D3DCF14009F0AEC /* GameOverScene.m in Sources */,
 				CC76DB991CD2024100540A41 /* GameViewController.m in Sources */,
 				CC76DB911CD2024100540A41 /* AppDelegate.m in Sources */,
 				CC76DB941CD2024100540A41 /* GameScene.m in Sources */,
@@ -531,6 +553,7 @@
 				CC76DBBD1CD2024200540A41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC76DBBE1CD2024200540A41 /* Build configuration list for PBXNativeTarget "HitAppleTests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +562,7 @@
 				CC76DBC01CD2024200540A41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC76DBC11CD2024200540A41 /* Build configuration list for PBXNativeTarget "HitAppleUITests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +571,7 @@
 				CC76DBC31CD2024200540A41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

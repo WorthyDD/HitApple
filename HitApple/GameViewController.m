@@ -9,6 +9,12 @@
 #import "GameViewController.h"
 #import "GameScene.h"
 
+
+@interface GameViewController()
+
+
+
+@end
 @implementation GameViewController
 
 - (void)viewDidLoad
@@ -28,6 +34,8 @@
     scene.size = [UIScreen mainScreen].bounds.size;
     // Present the scene.
     [skView presentScene:scene];
+
+    
 }
 
 - (BOOL)shouldAutorotate
